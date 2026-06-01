@@ -18,7 +18,7 @@
     </header>
 
     <h1>Privacy Policy</h1>
-    <p class="meta">Effective date: 10 May 2026 · Last updated: 10 May 2026</p>
+    <p class="meta">Effective date: 10 May 2026 · Last updated: 1 June 2026</p>
 
     <p>
       This Privacy Policy describes how <strong>Navicore</strong>
@@ -44,17 +44,19 @@
     <ul>
       <li><strong>Email address</strong> — used as your account identifier and for password resets / magic-link sign-in.</li>
       <li><strong>Display name</strong> and optional <strong>country</strong> — shown to other users on leaderboards and in chat.</li>
-      <li><strong>Avatar image</strong> (Premium feature only) — uploaded by you and stored in our object storage.</li>
+      <li><strong>Avatar image</strong> (optional; available from rank 5 or with a Premium subscription) — uploaded by you and stored in our object storage. Before it is saved, the image is automatically screened by an AI content-moderation service (see §1.4).</li>
       <li><strong>Authentication provider identifiers</strong> if you sign in with Apple or Google (subject identifier, name, email — whatever the provider releases to us).</li>
     </ul>
 
     <h3>1.2 In-app activity</h3>
     <ul>
       <li>Test results, completed question packs, mistakes, exam passes, daily challenges.</li>
+      <li>Duel (head-to-head) results and matchmaking activity.</li>
       <li>Earned XP, current rank, branch (deck / engine / etc.), streak count.</li>
       <li>Subscription status (free / Pro) and expiration date.</li>
       <li>Chat messages you post (visible to other users in the same rank-based channel).</li>
       <li>Reactions, replies, reports, moderation actions.</li>
+      <li>Study-guide / mentor search queries you type (stored to provide and improve in-app search).</li>
     </ul>
 
     <h3>1.3 Technical and security data</h3>
@@ -64,7 +66,22 @@
       <li><strong>Server logs</strong> for security audit (rate-limit triggers, suspicious activity, ad-reward verification).</li>
     </ul>
 
-    <h3>1.4 Advertising identifier (only if you opt in)</h3>
+    <h3>1.4 Automated content moderation (AI)</h3>
+    <p>
+      To keep the App safe, some content is checked by an automated
+      moderation service provided by OpenAI:
+    </p>
+    <ul>
+      <li><strong>Avatar images</strong> you upload are sent to OpenAI's moderation API and checked for prohibited content (sexual, violent, hateful, or involving minors) <em>before</em> they are saved. Images that fail the check are rejected and deleted — they are not stored.</li>
+      <li><strong>Chat messages</strong> and <strong>content you report</strong> may be processed by the same service to detect material that violates our rules.</li>
+    </ul>
+    <p>
+      This processing is automated and used solely to enforce content
+      safety. OpenAI acts as our data processor and does not use this
+      content to train its models.
+    </p>
+
+    <h3>1.5 Advertising identifier (only if you opt in)</h3>
     <p>
       On iOS we use <em>App Tracking Transparency</em>: the first time you
       watch a rewarded ad we show the system prompt asking permission to
@@ -74,7 +91,7 @@
       any time in iOS Settings → Privacy &amp; Security → Tracking.
     </p>
 
-    <h3>1.5 What we DO NOT collect</h3>
+    <h3>1.6 What we DO NOT collect</h3>
     <ul>
       <li>Location (GPS, IP-based geolocation, or any other).</li>
       <li>Contacts, calendar, photos library (other than the single image you choose as avatar).</li>
@@ -103,6 +120,11 @@
           <td>Detect fraud, abuse, automated bots</td>
           <td>Attestation tokens, server logs</td>
           <td>Legitimate interest (Art. 6(1)(f))</td>
+        </tr>
+        <tr>
+          <td>Screen uploaded images and chat for prohibited content</td>
+          <td>Avatar images, chat messages, reports</td>
+          <td>Legitimate interest (Art. 6(1)(f)) — platform safety; legal obligation (Art. 6(1)(c))</td>
         </tr>
         <tr>
           <td>Show personalized ads</td>
@@ -171,6 +193,12 @@
           <td>USA / EU</td>
         </tr>
         <tr>
+          <td>OpenAI, L.L.C.</td>
+          <td>Automated content moderation (avatar images, chat, reports)</td>
+          <td>Avatar images and text submitted for safety screening</td>
+          <td>USA</td>
+        </tr>
+        <tr>
           <td>Functional Software, Inc. (Sentry)</td>
           <td>Crash and error reporting</td>
           <td>Stack traces, device model, anonymous installation ID</td>
@@ -211,10 +239,10 @@
     <p>If you are a resident of the European Economic Area, the United Kingdom, Switzerland or Ukraine, you have the following rights:</p>
 
     <ul>
-      <li><strong>Right to access</strong> (Art. 15) — request a copy of all personal data we hold about you. The App provides this directly: <em>Profile → Settings → Export my data</em>.</li>
+      <li><strong>Right to access</strong> (Art. 15) — request a copy of all personal data we hold about you by emailing <a href="mailto:privacy@navicoreapp.com">privacy@navicoreapp.com</a>; we provide it in a machine-readable format.</li>
       <li><strong>Right to rectification</strong> (Art. 16) — correct inaccurate data. Most fields are editable in <em>Profile → Edit profile</em>; for the rest contact us.</li>
       <li><strong>Right to erasure</strong> (Art. 17) — delete your account and all associated data. Use <em>Profile → Settings → Delete account</em>, or email <a href="mailto:privacy@navicoreapp.com">privacy@navicoreapp.com</a>.</li>
-      <li><strong>Right to data portability</strong> (Art. 20) — receive your data in a machine-readable JSON format (provided by the same Export function).</li>
+      <li><strong>Right to data portability</strong> (Art. 20) — receive your data in a structured, machine-readable format by requesting it at <a href="mailto:privacy@navicoreapp.com">privacy@navicoreapp.com</a>.</li>
       <li><strong>Right to restrict processing</strong> (Art. 18) and <strong>right to object</strong> (Art. 21) — contact us.</li>
       <li><strong>Right to withdraw consent</strong> — you can revoke ATT permission in iOS Settings or remove notification permission at any time.</li>
       <li><strong>Right to lodge a complaint</strong> with a supervisory authority. In Ukraine: the <em>Verkhovna Rada Commissioner for Human Rights</em>. In the EU: the data-protection authority of your country of residence.</li>
