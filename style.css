@@ -53,6 +53,11 @@ header .brand {
 header nav { font-size: 14px; }
 header nav a { margin-left: 16px; color: var(--muted); text-decoration: none; }
 header nav a:hover { color: var(--link); }
+.langs { font-size: 13px; }
+.langs a { margin-left: 10px; color: var(--muted); text-decoration: none; text-transform: uppercase; letter-spacing: .5px; }
+.langs a:first-child { margin-left: 0; }
+.langs a:hover { color: var(--link); }
+.langs a.active { color: var(--fg); font-weight: 600; }
 h1 { font-size: 28px; line-height: 1.2; margin: 0 0 8px; }
 h2 { font-size: 20px; line-height: 1.3; margin: 36px 0 12px; }
 h3 { font-size: 17px; line-height: 1.4; margin: 24px 0 8px; }
